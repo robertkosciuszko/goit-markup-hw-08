@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Raleway', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-main);
+}
+
+:root {
+    --black-main: rgba(33, 33, 33, 1);
+    --logo-black: rgba(0, 0, 0, 1);
+    --main-blue: rgba(33, 150, 243, 1);
+    --background-grey: rgba(47, 48, 58, 1);
+    --main-white: rgba(255, 255, 255, 1);
+    --background-white: rgba(245, 244, 250, 1);
+    --main-silver: rgba(117, 117, 117, 1);
+    --font-footer: rgba(255, 255, 255, 0.6);
+    --face-foto: rgba(255, 255, 255, 1);
+    --border-image: rgba(238, 238, 238, 1);
+    --border-karta: rgba(236, 236, 236, 1);
+    --back-icons: rgba(245, 244, 250, 1);
+    --socialmediaborder: rgba(255, 255, 255, 1);
+    --iconcolor: rgba(175, 177, 184, 1);
+    --backicon: #FFFFFF;
+    --colorclientsheader: rgba(33, 33, 33, 1);
+    --borderclientslogo: rgba(175, 177, 184, 1);
+    --footersocial: rgba(255, 255, 255, 0.1);
+}
+h1 {
+    color: var(--main-white);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    display: flex;
+    max-width: 969px;
+    max-height: 120px;
+    text-align: center;
+    margin: o auto;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px) {
+    h1 
+    {width: 365px;
+    height: 84px;
+    font-size: 26px;
+    text-align: center;
+    font-family: Roboto;
+    Font-style: Black;
+    Font-size: 26px;
+    line-height: 42px;
+    line-height:138%;
+    align-items: Center;
+    vertical-align: Top;
+    letter-spacing: 6%;
+    margin-left: 57px;
+    margin-right: 58px;
+    }}
+
+    @media screen and (mix-width: 768px) {
+        h1 
+        {width: 365px;
+        height: 84px;
+        font-size: 26px;
+        text-align: center;
+        font-family: Roboto;
+        Font-style: Black;
+        line-height: 42px;
+        line-height:138%;
+        align-items: Center;
+        vertical-align: Top;
+        letter-spacing: 6%;
+        margin-left: 202px;
+        margin-right: 201px;
+        margin-bottom: 40px;
+        }}
+footer {
+    background-color: var(--background-grey);
+
+}
+.mail {
+    text-decoration: underline;
+}

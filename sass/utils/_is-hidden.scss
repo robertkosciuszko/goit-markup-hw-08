@@ -1,0 +1,18 @@
+.is-hidden {
+    transform: translateX(-100%);
+}
+.backdrop {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s;
+}
+@media screen and (max-width: 1200px) {
+    .is-hidden {
+      display: none;
+    }
+}

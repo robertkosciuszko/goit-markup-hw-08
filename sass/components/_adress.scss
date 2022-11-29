@@ -1,0 +1,18 @@
+.adress {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--main-white);
+    justify-content: left;
+    padding: 0;
+    margin-bottom: 9px;
+    font-style: normal;
+
+
+&:active,
+&:focus {
+    color: #2196F3;
+    transition: color;
+    transition-duration: 2ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

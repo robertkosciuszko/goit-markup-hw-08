@@ -1,0 +1,183 @@
+@media screen and (max-width: 768px){
+    .footericons{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }}
+
+.footericons {
+    display: block;
+    margin: 0;
+    padding-top: 72px;
+    margin-left: 70px;
+}
+
+
+@media screen and (max-width: 768px){
+    .footerheader{
+    margin-top: -60px;
+ margin-left: -60px;
+    }}
+
+.footerheader {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+.footercontact{
+ justify-content: center;
+ flex-direction: column;
+ padding: 20px;
+ text-align: center;}}
+
+
+.footercontact {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 60px;
+    align-items: left;
+
+}
+
+.footerstyler {
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+  .down_footer{
+    display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  height: 603px;
+
+}}
+
+
+.down_footer {
+    background-color: var(--background-grey);
+    display: flex;
+    margin-top: 94px;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .buttonmailfooter{
+width: 450px;
+height: 50px;
+margin-left: -30px;
+flex-direction: column;
+position: absolute;
+ 
+    }}
+  
+
+.buttonmailfooter {
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-grey);
+    margin-right: 12px;
+    &::placeholder {
+    font-family: "roboto";
+    letter-spacing: 3%;
+    width: 47px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 16px 15px 295px 15px;
+}}
+
+@media screen and (max-width: 768px){
+    .buttonsend{position: absolute;
+        margin-top:80px;
+        margin-left: 45px;
+    }}
+ 
+
+.buttonsend {
+
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: var(--main-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.buttonsend__text {
+
+    Font-family: "Roboto";
+    font-style: Bold;
+    Font-size: 16px;
+    line-height: 30px;
+    Letter-spacing: 6%;
+    color: var(--main-white);
+    padding: 10px 76px 10px 42px;
+    align-items: center;
+
+
+}
+@media screen and (max-width: 768px){
+    
+    .buttonsend__icon{position: absolute;
+        margin-top:80px;
+        margin-left: 45px;
+    }}
+ 
+.buttonsend__icon {
+    fill: var(--main-white);
+    position: absolute;
+    padding: 13px 8px 13px 148px;
+}
+.register {
+    display: block;
+    margin-left: 90px;
+
+}
+
+@media screen and (max-width: 768px){
+    .signupp{
+      display: flex;
+   margin-left: 38px;  
+   font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+  }}
+  
+
+.signupp {
+    font-family: "roboto";
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    line-height: 100%;
+    vertical-align: top;
+    letter-spacing: 3%;
+    color: var(--main-white);
+    margin-bottom: 20px;
+    margin-top: 72px;
+}

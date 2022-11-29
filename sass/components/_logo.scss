@@ -1,0 +1,61 @@
+.webstudio {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    margin-right: 93px;
+
+}
+@media screen and (max-width: 768px){
+    .webstudio1{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 0px;
+     }}
+    
+.webstudio1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: rgba(33, 150, 243, 1);
+
+}
+
+.logo2 {
+    color: var(--logo-black);
+
+}
+
+.logo3 {
+    color: var(--main-white);
+}
+.logo:active,
+.logo2:active,
+.logo3:active {
+    color: #2196F3;
+}
+
+.logo2:hover,
+.logo3:hover,
+.logo2:focus {
+    color: #2196F3;
+    transition: color;
+    transition-duration: 2ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo3:focus {
+    color: #2196F3;
+    transition: color;
+    transition-duration: 2ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

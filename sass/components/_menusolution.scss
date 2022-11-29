@@ -1,0 +1,35 @@
+.menusolution {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: flex-start;
+}
+.menusolution__picture {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    display: block;
+}
+.menusolution-text {
+    position: absolute;
+    display: block;
+    color: var(--main-white);
+    font-style: 700px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 27px 90px;
+}
+
+.menusolution__list {
+    position: relative;
+    z-index: -1;
+}
