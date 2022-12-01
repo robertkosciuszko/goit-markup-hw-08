@@ -1,71 +1,22 @@
 
 
-@media screen and (max-width: 767px){
-    .loremlist  {
-        display: flex;
-        margin-inline: 5px;
-        flex-direction: column;
-        position: relative;
-        margin-top: 512px;
-        margin-bottom: 60px;
-        
-    }
-    .section{
-        margin-bottom: 60px;
-        padding: 0;
-    }
-}
-
-   @media screen and (max-width: 768px){
-   .loremlist__icon {
-    width: 100%;
-    border-radius: 4px;
-}}
-
-@media screen and (min-width: 768px){
-    .loremlist  {
-        display: flex;
-        margin-inline: 5px;
-        position: relatiave;
-        margin-top: 512px;
-        margin-bottom: 60px;
-        display: flex;
-    // flex-direction: row;
+.loremlist {
+    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-  }
-  .ipsum-style{
-    display: row;
-    justify-content: flex-start;
-    width: 100%;
-    margin-inline: 5px;
-  }
-  .loremlist__element{
-    flex-basis: calc((100% - 30px)/2);
-   
-  }
-    .section{
-        margin-bottom: 60px;
-        padding: 0;
-    }}
-
-
-   @media screen and (min-width: 768px){
-   .loremlist__icon {
-    width: 100%;
-    border-radius: 4px;
-    
-}}
-
-
-
-
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom:0;
+    padding: 0px;
+}
 
 .ipsum-style {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -75,28 +26,6 @@
     gap: 30px;
 }
 
-.loremlist {
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0px;
-}
-@media screen and (max-width: 767px){
-    .loremlist__heading{ 
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-
-    
-    }
-}
 .loremlist__heading {
     color: var(--black-main);
     font-size: 14px;
@@ -110,16 +39,13 @@
     line-height: 1.71;
 }
 
-.loremlist__element {
-
-    flex-basis: calc((100% - (3 * 30px)) / 4);
-}
 
 .loremlist__icon {
 
     background-color: var(--back-icons);
     border-radius: 4px;
     height: 120px;
+    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,3 +60,32 @@
     border: 1px solid var(--main-blue);
 
 }}
+
+@media screen and (min-width: 768px)and (max-width: 1199px) {
+    .loremlist {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        
+    }
+    .loremlist__element {
+      width: 354px;
+      margin: 0;
+      padding: 0;
+    }
+.section1{
+    margin-bottom:  60px;
+}}
+
+    @media screen and (min-width: 768px){
+    .loremlist__element {
+
+        flex-basis: calc((100% - 30px)/2);}
+
+    }
+    @media screen and (min-width: 1200px) {
+        .loremlist {
+          flex-wrap: nowrap;
+          gap: 30px;
+        }
+}

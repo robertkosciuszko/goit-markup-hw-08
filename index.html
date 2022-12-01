@@ -19,6 +19,108 @@
   </head>
   <body>
     <header class="container">
+
+      <!-- MOBILE-MENU  -->
+      <div class="mobile-menu__overlay" data-menu>
+        <div class="mobile-menu">
+          <button
+            class="mobile-menu__btn-close"
+            type="button" 
+            data-menu-close
+          >
+            <svg
+              class="mobile-menu__icon-close"
+              width="40"
+              height="40"
+            >
+              <use
+                href="./images/icons.svg#icon-close_24px"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a
+                class="mobile-menu__link-nav mobile-menu__link-nav--active"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a
+                class="mobile-menu__link-nav"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a
+                class="mobile-menu__link-contact-tel"
+                href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu__list-contact-mailto">
+              <a
+                class="mobile-menu__link-contact-mailto"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MOBILE-MENU ENDS  -->
+
       <div class="wrapper">
         <nav class="navigation">
           <a class="webstudio" href="/index.html"
@@ -30,7 +132,22 @@
             <li><a class="menu__link" href="./Kontakt">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="menu">
+        <button
+        class="mobile-menu-btn"
+        type="button"
+        data-menu-open
+      >
+        <svg
+          class="mobile-menu-btn__icon"
+          width="40"
+          height="40"
+        >
+          <use
+            href="./images/icons.svg#icon-menu_24px"
+          ></use>
+        </svg>
+      </button>
+        <ul class="menumail">
           <li>
             <a class="menu__contact" href="mailto:info@devstudio.com">
               <svg class="menu__icon" width="16" height="12">
@@ -131,7 +248,7 @@
           </div>
         </div></div>
       </section>
-      <section class="section" class="advantages" >
+     <section class="section" class="advantages" >
         <div class="container">
           <div class="ipsum-style">
             <ul class="loremlist">
@@ -187,7 +304,7 @@
           </div></div>
         </div>
       </section>
-      <section class="section_description">
+    <section class="section_description">
         <div class="container">
           <h2 class="description">Czym się zajmujemy</h2>
           <ul class="menusolution">
@@ -221,7 +338,7 @@
           </ul>
         </div>
       </section>
-      <!--<section class="backgroundteam"><div class="section"><div class="container"><div class="section2">
+      <section class="backgroundteam"><div class="section"><div class="container"><div class="section2">
             <h2 class="description1">Nasz zespół</h2>
             <ul class="teamlist">
               <li class="teamlist__element">
@@ -420,9 +537,9 @@
             </ul>
           </div>
         </div></div>
-      </section>-->
-     <!--<section>
-        <div class="clients">
+      </section>
+     <section>
+        <!--<div class="clients">
           <h2 class="headerclients">Nasi klienci</h2>
           <ul class="listcompany">
             <li>
@@ -506,8 +623,8 @@
           </ul>
         </div>
       </section>
-    </main>
-   <footer><div class="container">
+    </main>-->
+   <!--<footer><div class="container">
       <div class="down_footer">
         <div class="footercontact">
           <a class="webstudio1" href="/"
@@ -595,7 +712,8 @@
       </div>
       </div>
       </div>
-    </footer>
+    </footer>-->
      <script src="./js/modal.js"></script>
-  </body>
+     <script src="./js/mobile-menu.js"></script>
+  <!--</body>
   </html>

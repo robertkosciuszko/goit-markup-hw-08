@@ -1,3 +1,73 @@
+
+  
+
+    .menu {
+      display: none;
+    }
+    .menumail{
+      display: none;}
+      
+
+  @media screen and (min-width: 768px) {
+    .menu__contact {
+        
+        color: var(--main-silver);
+        text-decoration: none;
+        font-size: 14px;
+    &:hover svg {
+        fill: var(--main-blue)
+    }
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        transition: color;
+        transition-duration: 2ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    .menu {
+        list-style-type: none;
+        text-decoration: none;
+        gap: 60px;
+      visibility: visible;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .menumail{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .menu_list {
+      visibility: visible;
+      display: inline-flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .menu__link {
+        color: var(--black-main);
+        text-decoration: none;
+    
+    &:hover::after {
+        color: var(--main-blue);
+    }
+    &:focus {
+        color: blue;
+        transition: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }}
+    }
+    @media screen and (min-width: 1200px){
+        .menumail {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;}
+
 .menu__link {
     color: var(--black-main);
     text-decoration: none;
@@ -49,7 +119,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .navigation .menu__contact:active {
     color: #2196F3;
 }
@@ -82,8 +151,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }}
 
-
-
 .menucontact {
     
     list-style-type: none;
@@ -113,22 +180,6 @@
     margin: 0;
     padding: 0px;
 }
-@media screen and (max-width: 767px) {
-    .menu {
-      display: none;
-    }
-}
-@media screen and (min-width: 768px) {
-    .menu {
-      
-      visibility: visible;
-      display: flex;
-      flex-direction: row;
-      position: relative;
-    }
-  }
-  
-
 .menu__icon {
     margin-right: 10px;
 &:hover {
@@ -136,24 +187,9 @@
     cursor: pointer;
 }}
 
-
 .menu_list
 {
     font-size: 14px;
 }
-@media screen and (max-width: 768px) {
-    .menu_list{
-      display: none;
-      visibility: hidden;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .menu_list {
-      visibility: visible;
-      display: inline-flex;
-      flex-direction: row;
-      position: relative;
-    }
-    }
-  
-  
+
+}

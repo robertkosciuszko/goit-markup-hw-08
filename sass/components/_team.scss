@@ -1,48 +1,75 @@
-@media screen and (max-width: 768px) {
-    .teamlist { 
-     display: flex;
-     margin-inline: 5px;
-     flex-direction: column;
-     position: relative;
-    }
- }
-
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+.backgroundteam {
+  background-color: var(--background-white);
+  position: relative;
+}
 .teamlist {
-
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0px;
 }
 .teamlist__name {
-    color: var(--black-main);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.17;
-    padding: 30px 0 10px;
-
+  color: var(--black-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  padding: 30px 0 10px;
 }
 
 .teamlist__position {
-    color: var(--main-silver);
-    font-size: 16px;
-    line-height: 1.17;
-    padding-bottom: 30px;
+  color: var(--main-silver);
+  font-size: 16px;
+  line-height: 1.17;
+  padding-bottom: 30px;
 }
+
 .teamlist__element {
-    background-color: var(--main-white);
-    text-align: center;
-    border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - (3 * 30px)) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 94px;
+  background-color: var(--main-white);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - (3 * 30px)) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 94px;
 }
 .teamlist__picture {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.section2 {
+  background-color: var(--background-white);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.teamlist {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .teamlist {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamlist {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
