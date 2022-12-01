@@ -9,12 +9,6 @@ $accentC: #2196F3;
 $brandC: #212121;
 $greyC: #757575;
 
-body {
-    /* font-family: 'Raleway', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    color: var(--black-main);
-}
-
 :root {
     --black-main: rgba(33, 33, 33, 1);
     --logo-black: rgba(0, 0, 0, 1);
@@ -40,18 +34,13 @@ h1 {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
-    display: flex;
-    max-width: 969px;
-    max-height: 120px;
-    text-align: center;
-    margin: o auto;
     flex-wrap: wrap;
+    display: flex;
 }
 
 @media screen and (min-width: 480px) {
     h1 
-    {width: 365px;
-    height: 84px;
+    {
     font-size: 26px;
     text-align: center;
     font-family: Roboto;
@@ -59,11 +48,8 @@ h1 {
     Font-size: 26px;
     line-height: 42px;
     line-height:138%;
-    align-items: Center;
     vertical-align: Top;
     letter-spacing: 6%;
-    margin-left: 57px;
-    margin-right: 58px;
     }}
 
     @media screen and (mix-width: 768px) {

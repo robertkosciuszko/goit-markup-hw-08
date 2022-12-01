@@ -31,12 +31,6 @@
   padding: 0;
 }
 
-body {
-  /* font-family: 'Raleway', sans-serif;*/
-  font-family: "Roboto", sans-serif;
-  color: var(--black-main);
-}
-
 :root {
   --black-main: rgba(33, 33, 33, 1);
   --logo-black: rgba(0, 0, 0, 1);
@@ -63,21 +57,15 @@ h1 {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 969px;
-  max-height: 120px;
-  text-align: center;
-  margin: o auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 480px) {
   h1 {
-    width: 365px;
-    height: 84px;
     font-size: 26px;
     text-align: center;
     font-family: Roboto;
@@ -85,13 +73,8 @@ h1 {
     Font-size: 26px;
     line-height: 42px;
     line-height: 138%;
-    -webkit-box-align: Center;
-        -ms-flex-align: Center;
-            align-items: Center;
     vertical-align: Top;
     letter-spacing: 6%;
-    margin-left: 57px;
-    margin-right: 58px;
   }
 }
 @media screen and (mix-width: 768px) {
@@ -129,17 +112,13 @@ footer {
   max-width: 1200px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
+.container1 {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0px auto;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -235,7 +214,6 @@ footer {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/17.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
@@ -245,7 +223,6 @@ footer {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobilimg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 480px;
     margin-bottom: 40px;
     position: absolute;
   }
@@ -258,7 +235,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    margin-bottom: 40px;
     position: relative;
   }
 }
@@ -1141,9 +1117,6 @@ footer {
 }
 
 .ipsum-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1154,29 +1127,18 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
   width: 100%;
-  padding: 0 15px;
   margin: 0 auto;
-  max-width: 1200px;
   margin-bottom: 10px;
-  margin-top: 94px;
   gap: 30px;
 }
 
 .loremlist {
   list-style-type: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
   margin: 0;
   padding: 0px;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 0;
 }
 
 .loremlist__heading {
@@ -1201,7 +1163,6 @@ footer {
   background-color: var(--back-icons);
   border-radius: 4px;
   height: 120px;
-  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1249,6 +1210,12 @@ footer {
         flex-wrap: nowrap;
     padding: 94px 0;
     gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ipsum-style {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1431,7 +1398,7 @@ footer {
   .teamlist__picture {
     width: 354px;
   }
-  .container {
+  .container1 {
     width: 705px;
   }
 }
@@ -1456,6 +1423,9 @@ footer {
   border-radius: 4px;
   padding: 10px 41px;
   margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .order:active {
   color: #2196F3;
@@ -1465,7 +1435,6 @@ footer {
   .order {
     width: 200px;
     height: 50px;
-    left: 140px;
     background: #2196F3;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1475,16 +1444,13 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .order {
-    width: 200px;
-    height: 50px;
-    left: 140px;
     background: #2196F3;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    position: absolute;
-    left: 284px;
-    top: 312px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

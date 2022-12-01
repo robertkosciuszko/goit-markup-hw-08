@@ -3,29 +3,20 @@
     padding: 94px;
 }
 .ipsum-style {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
     width: 100%;
-    padding: 0 15px;
     margin: 0 auto;
-    max-width: 1200px;
     margin-bottom: 10px;
-    margin-top: 94px;
     gap: 30px;
 }
 .loremlist {
     list-style-type: none;
     text-decoration: none;
-    display: flex;
     gap: 30px;
     margin: 0;
     padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 0;
 }
 
 .loremlist__heading {
@@ -50,7 +41,6 @@
     background-color: var(--back-icons);
     border-radius: 4px;
     height: 120px;
-    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +71,6 @@
 
     @media screen and (min-width: 768px){
     .loremlist__element {
-
         flex-basis: calc((100% - 30px)/2);}
 
     }
@@ -90,5 +79,9 @@
           flex-wrap: nowrap;
           padding: 94px 0;
           gap: 30px;
+          display: flex;
+        }
+        .ipsum-style{
+            margin-top: 20px;
         }
 }
