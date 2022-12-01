@@ -195,7 +195,6 @@ footer {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  max-width: 1600px;
 }
 
 .wrapper {
@@ -236,6 +235,7 @@ footer {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/17.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
@@ -247,7 +247,7 @@ footer {
     background-size: cover;
     width: 480px;
     margin-bottom: 40px;
-    position: relative;
+    position: absolute;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1135,18 +1135,9 @@ footer {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.loremlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  gap: 30px;
-  margin-bottom: 0;
-  padding: 0px;
+.advantages {
+  margin: 0;
+  padding: 94px;
 }
 
 .ipsum-style {
@@ -1173,6 +1164,21 @@ footer {
   gap: 30px;
 }
 
+.loremlist {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
 .loremlist__heading {
   color: var(--black-main);
   font-size: 14px;
@@ -1184,6 +1190,11 @@ footer {
   color: var(--main-silver);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.loremlist__element {
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
 }
 
 .loremlist__icon {
@@ -1224,11 +1235,6 @@ footer {
   }
   .loremlist__element {
     width: 354px;
-    margin: 0;
-    padding: 0;
-  }
-  .section1 {
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1241,6 +1247,7 @@ footer {
   .loremlist {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 94px 0;
     gap: 30px;
   }
 }
@@ -1327,14 +1334,8 @@ footer {
   padding-bottom: 50px;
 }
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 0px;
-}
-
 .backgroundteam {
   background-color: var(--background-white);
-  position: relative;
 }
 
 .teamlist {
@@ -1346,6 +1347,7 @@ footer {
   gap: 30px;
   margin: 0;
   padding: 0px;
+  margin-bottom: 94px;
 }
 
 .teamlist__name {
@@ -1420,6 +1422,17 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .teamlist__picture {
+    width: 354px;
+  }
+  .container {
+    width: 705px;
   }
 }
 @media screen and (min-width: 1200px) {
