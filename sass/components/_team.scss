@@ -61,11 +61,13 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   .teamlist {
     flex-direction: row;
     flex-basis: calc((100% - 30px)/2);
     justify-content: center;
+    flex-wrap: wrap;
+
    
   }
   .teamlist__picture{
@@ -73,7 +75,7 @@
    
   }
   .container1{
-    width: 705px;
+    max-width: 700px;
   }
   
 }
@@ -82,4 +84,8 @@
     flex-wrap: nowrap;
     justify-content: center;
   }
+  .container1{
+    max-width: 1200px;
+  }
 }
+

@@ -88,7 +88,84 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (min-width: 320px) {
+    .backgroundorder {
+      background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../mobile.img.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .backgroundorder {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/mobileimg@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .backgroundorder {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tabletimg.jpg);
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .backgroundorder {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/tabletimg@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .backgroundorder {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/descopimg.jpg);
+        height: 600px;
+    }
+    .intro__title {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .backgroundorder{
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/descop@2x.jpg);
+    }
+  }
 
+
+
+
+
+
+
+
+/*
 @media screen and (max-width: 768px) {
     .backgroundorder {
         background-color: var(--background-grey);
@@ -97,7 +174,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 40px;
-    position: absolute;
+   
     }}
 
    
@@ -109,5 +186,5 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        position: relative;
-        }}
+        
+        }}*/

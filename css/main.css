@@ -216,28 +216,80 @@ footer {
   background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .backgroundorder {
-    background-color: var(--background-grey);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobilimg.png);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobilimg.png);
-    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../mobile.img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../mobile.img.jpg);
     background-size: cover;
-    margin-bottom: 40px;
-    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .backgroundorder {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobileimg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobileimg@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .backgroundorder {
-    background-color: var(--background-grey);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tabletimg.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tabletimg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    position: relative;
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .backgroundorder {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tabletimg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tabletimg@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backgroundorder {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/descopimg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/descopimg.jpg);
+    height: 600px;
+  }
+  .intro__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .backgroundorder {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/descop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/descop@2x.jpg);
+  }
+}
+/*
+@media screen and (max-width: 768px) {
+    .backgroundorder {
+        background-color: var(--background-grey);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/mobilimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+
+    }}
+
+
+    @media screen and (min-width: 768px) {
+        .backgroundorder {
+            background-color: var(--background-grey);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/tabletimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        }}*/
+.register {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .footericons {
     -webkit-box-pack: center;
@@ -486,7 +538,6 @@ footer {
 
 .register {
   display: block;
-  margin-left: 90px;
 }
 
 @media screen and (max-width: 768px) {
@@ -516,6 +567,39 @@ footer {
   margin-top: 72px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .down_footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 60px;
+  }
+  .register {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .down_footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 0;
+  }
+  .register {
+    margin-left: 100px;
+  }
+}
 .modal {
   width: 528px;
   height: 581px;
@@ -621,6 +705,44 @@ footer {
 
 .menumail {
   display: none;
+}
+
+.menucontact {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0px;
+  padding-top: 0px;
+  margin-bottom: 9px;
+}
+
+.menucontact__list {
+  color: var(--font-footer);
+  font-size: 14px;
+  line-height: 1.86;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+.menucontact__list:active {
+  color: #2196F3;
+}
+.menucontact__list:hover, .menucontact__list:focus {
+  color: #2196F3;
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -777,42 +899,6 @@ footer {
   }
   .navigation .menu__contact:hover {
     color: #2196F3;
-  }
-  .menucontact__list {
-    color: var(--font-footer);
-    font-size: 14px;
-    line-height: 1.86;
-    text-decoration: none;
-    margin-bottom: 9px;
-  }
-  .menucontact__list:active {
-    color: #2196F3;
-  }
-  .menucontact__list:hover, .menucontact__list:focus {
-    color: #2196F3;
-    -webkit-transition: color;
-    transition: color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .menucontact {
-    list-style-type: none;
-    text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding: 0px;
-    padding-top: 0px;
-    margin-bottom: 9px;
   }
   .menucontact__list {
     color: var(--font-footer);
@@ -1394,12 +1480,14 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .teamlist__picture {
     width: 354px;
   }
   .container1 {
-    width: 705px;
+    max-width: 700px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1409,6 +1497,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .container1 {
+    max-width: 1200px;
   }
 }
 .order {

@@ -6,7 +6,36 @@
     }
     .menumail{
       display: none;}
-      
+
+      .menucontact {
+
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 0px;
+        padding-top: 0px;
+        margin-bottom: 9px;
+    }
+    .menucontact__list {
+        color: var(--font-footer);
+        font-size: 14px;
+        line-height: 1.86;
+        text-decoration: none;
+        margin-bottom: 9px;
+    &:active {
+        color: #2196F3;
+    }
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        transition: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }}
+    
+    
 
   @media screen and (min-width: 768px) {
     .menu__contact {
@@ -134,34 +163,7 @@
     color: #2196F3;
 
 }
-.menucontact__list {
-    color: var(--font-footer);
-    font-size: 14px;
-    line-height: 1.86;
-    text-decoration: none;
-    margin-bottom: 9px;
-&:active {
-    color: #2196F3;
-}
-&:hover,
-&:focus {
-    color: #2196F3;
-    transition: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}}
 
-.menucontact {
-    
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 0px;
-    padding-top: 0px;
-    margin-bottom: 9px;
-}
 
 
 .menucontact__list {
