@@ -64,19 +64,18 @@ h1 {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
-  h1 {
-    font-size: 26px;
-    text-align: center;
-    font-family: Roboto;
-    Font-style: Black;
-    Font-size: 26px;
-    line-height: 42px;
-    line-height: 138%;
-    vertical-align: Top;
-    letter-spacing: 6%;
-  }
+h1 {
+  font-size: 26px;
+  text-align: center;
+  font-family: Roboto;
+  Font-style: Black;
+  Font-size: 26px;
+  line-height: 42px;
+  line-height: 138%;
+  vertical-align: Top;
+  letter-spacing: 6%;
 }
+
 @media screen and (mix-width: 768px) {
   h1 {
     width: 365px;
@@ -1002,13 +1001,6 @@ footer {
   margin-right: 93px;
 }
 
-@media screen and (max-width: 768px) {
-  .webstudio1 {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 0px;
-  }
-}
 .webstudio1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1304,27 +1296,23 @@ footer {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 768px) {
-  .listcompany {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    border-radius: 4px;
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
 .listcompany {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  border-radius: 4px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.listcompany {
+  list-style: none;
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1522,17 +1510,16 @@ footer {
   color: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
-  .order {
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-top: 0px;
-  }
+.order {
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 0px;
 }
+
 @media screen and (min-width: 768px) {
   .order {
     background: #2196F3;

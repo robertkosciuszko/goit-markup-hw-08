@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+
 .listcompany{
 display: flex;
 flex-wrap: wrap;
@@ -7,20 +7,16 @@ list-style: none;
 border-radius: 4px;
 flex-basis: calc((100% - 30px) / 2);
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}}
+}
 
 .listcompany {
 
     list-style: none;
-    display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
     margin: 0;
 }
-
-
-
 
 .listcompany__icon {
     border: 1px solid var(--borderclientslogo);
